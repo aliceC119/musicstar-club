@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'blog',
     'django_summernote',
     'about',
+    'contact',
 ]
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
