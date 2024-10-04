@@ -27,7 +27,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-alicec119-musicstarclub-ro0xa6nd0tt.ws.codeinstitute-ide.net', '.herokuapp.com']
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -49,8 +50,10 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'blog',
     'django_summernote',
+    'cloudinary',
     'about',
     'contact',
+
 ]
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
