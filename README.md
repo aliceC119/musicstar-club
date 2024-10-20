@@ -92,6 +92,12 @@ This blog application was developed using Django and is intended for users of th
 
 <img width="987" alt="Screenshot 2024-10-20 at 18 19 06" src="https://github.com/user-attachments/assets/a31516e2-9941-4064-9773-8c1c91c10a7a">
 
++ Delete a comment
+  - When the site user deletes a comment, a pop-up box is displayed to ensure that the site user really wants to delete the comment.
+  - After a comment has been deleted, a 'Comment deleted' message is displayed.
+<img width="843" alt="Screenshot 2024-10-20 at 18 48 08" src="https://github.com/user-attachments/assets/aaa228ff-0842-4336-9348-86403b8ef6c2">
+
+<img width="755" alt="Screenshot 2024-10-20 at 18 48 55" src="https://github.com/user-attachments/assets/d9073ab6-ae71-4ae5-b0ca-a9917106c90a">
 
 
 ------
