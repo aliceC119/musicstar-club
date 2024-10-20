@@ -171,4 +171,21 @@ body {
 i{
     font-size: 18px;
     
-  }
+}
+
+.social-share-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-share-buttons a{
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.social-share-buttons a:hover{
+    background-color: #f31d88;
+}
