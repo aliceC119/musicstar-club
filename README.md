@@ -1,51 +1,98 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+### Musicstar Blog 
+This blog application was developed using Django and is intended for users of the site who are interested in classical music and related topics. It also helps to gather users of the site who have similar interests in music and allows them to interact with the site owner by sending comments on the blog posts and messages to the site owner using the contact form. Musicstar will be useful to the target audience by providing up-to-date information and news in the field of classical music.
 
-Welcome Alice Chan,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<img width="1340" alt="home" src="https://github.com/user-attachments/assets/a0a16790-d3d6-4896-91ec-a14f9ae74af7">
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+### Features
 
-## Gitpod Reminders
++ Navigation
+  - The name of this blog app is displayed in the top left corner.
+  - The fully responsive navigation bar contains links to the Home page, About page, Register page, Login page and Contact page.
+  - They are placed identically on each page for easy navigation.
+  - A 'You are not logged in' or 'You are logged in as (username)' message will appear on the right to indicate the login status.
+    
+<img width="1341" alt="Screenshot 2024-10-20 at 16 48 04" src="https://github.com/user-attachments/assets/8ab0c083-5fc6-4c9c-b5b2-8fc96906eb67">
+<img width="543" alt="Screenshot 2024-10-20 at 16 54 56" src="https://github.com/user-attachments/assets/f2123851-4e33-4732-bdc0-ee0ebe650d97">
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
++ Home Page
+  - Six blog posts are presented in each page on the homepage.
+  - There are 'Next' and 'Previous' buttons below the six posts to help site users browse through the blog posts.
 
-`python3 -m http.server`
+<img width="179" alt="Screenshot 2024-10-20 at 17 01 03" src="https://github.com/user-attachments/assets/81c03091-a027-4b64-911c-8dce70d32340">
 
-A blue button should appear to click: _Make Public_,
++ Blog Post
+  - The name of the author of the post and a photo will be displayed.
+  - The title of the post and its excerpt appear under the photo.
+  - It also shows the date and time the post was created.
+  - 'Like' and 'Comment' icons are also displayed to show how many users have reacted to the post.
+<img width="412" alt="Screenshot 2024-10-20 at 17 09 52" src="https://github.com/user-attachments/assets/6d44eb03-5607-4403-bc41-1aabb14308c9">
 
-Another blue button should appear to click: _Open Browser_.
++ Inside the Post
+  - The title of the post, the author's name, and the date and time of posting are displayed at the top of the post.
+  - The content of the post is displayed in the centre.
+<img width="1156" alt="Screenshot 2024-10-20 at 17 16 06" src="https://github.com/user-attachments/assets/025c0fa6-09a6-4cb3-aa95-1d044a3ef6eb">
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
++ Social share buttons
+  - Social share buttons are displayed below the content of the post, allowing site users to freely share the post on their chosen social media platform.
+  - When the social share button is clicked, a link from the post is redirected to the selected social media platform.
+<img width="703" alt="Screenshot 2024-10-20 at 17 28 27" src="https://github.com/user-attachments/assets/4c0de78a-14fd-4d8f-8910-ee70c020da5a">
 
-A blue button should appear to click: _Make Public_,
+<img width="113" alt="Screenshot 2024-10-20 at 17 27 05" src="https://github.com/user-attachments/assets/82369b54-d8cf-48bc-8e44-73135ce6ec36">
 
-Another blue button should appear to click: _Open Browser_.
+<img width="544" alt="Screenshot 2024-10-20 at 17 20 08" src="https://github.com/user-attachments/assets/63433beb-0f35-4e43-9c8a-90f3bcb07a64">
+<img width="677" alt="Screenshot 2024-10-20 at 17 20 22" src="https://github.com/user-attachments/assets/0287aaaf-9d6d-4560-bd09-781326824baa">
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
++ 'Like' button
+  - Below the social sharing buttons is a 'Like' button.
+  - Site users can click the 'Like' button if they like the post.
+  - After clicking the 'Like' button, the number of 'likes' will increase.
+  - Site users can also uncheck the 'Like' button, which will decrease the number of 'likes'. 
 
-To log into the Heroku toolbelt CLI:
+<img width="420" alt="Screenshot 2024-10-20 at 17 54 44" src="https://github.com/user-attachments/assets/b00175b9-aa4c-465f-8cd9-f18e7611639e">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
++ Comment
+  - There is a comment section located at the button of the post.
+    
+<img width="1131" alt="Screenshot 2024-10-20 at 17 56 04" src="https://github.com/user-attachments/assets/42b2526e-e88b-450c-aa5a-0f89abde648e">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
++ Comment box
+  - Site users are free to write comments about the post in the comment box.
+    
+    
+<img width="403" alt="Screenshot 2024-10-20 at 17 56 55" src="https://github.com/user-attachments/assets/5ee58f64-82cb-4519-b986-26354d3494f2">
 
-### Connecting your Mongo database
++ Submit a comment
+  - When a comment is submitted, a message stating 'Comment submitted and awaiting approval' appears at the top of the post page.
+  
+    
+<img width="762" alt="Screenshot 2024-10-20 at 17 58 16" src="https://github.com/user-attachments/assets/dca419d1-8382-4db5-b8a5-aae8e0330f0a">
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
++ Approve a comment
+  - The site administrator can then click on 'Approve', 'Save', or 'Delete' the comment on the admin page.
+
+<img width="1320" alt="Screenshot 2024-10-20 at 18 01 40" src="https://github.com/user-attachments/assets/4d51d322-dbdb-4a75-88f4-6d7f1a7392ba">
+
++ Messages before and after the comment is approved
+  
+  - Before the comment is approved, a message stating 'This comment is awaiting approval' will appear in the comment section
+  - A 'Delete' and 'Edit' button will also be displayed for the site user to use if they wish to further edit or delete the comment.
+
+<img width="370" alt="Screenshot 2024-10-20 at 18 00 36" src="https://github.com/user-attachments/assets/1c90890c-87f0-4155-95ad-bd69029cb90a">
+
++ An approved comment (A logged in site user)
+  
+  - Once the site admin has clicked 'Approve', the 'This comment is awaiting approval' message will disappear for the logged in site user.
+  
+<img width="368" alt="Screenshot 2024-10-20 at 18 19 16" src="https://github.com/user-attachments/assets/eaf5b0f4-a6c9-47e0-8143-beb03c864835">
+
++ An approved comment (Unregistered site users)
+  - The 'Delete' and 'Edit' buttons would still remain in the comment area for the site user in case they wish to delete or edit the comment.
+  - Only logged in site users can post a comment.
+
+<img width="987" alt="Screenshot 2024-10-20 at 18 19 06" src="https://github.com/user-attachments/assets/a31516e2-9941-4064-9773-8c1c91c10a7a">
+
+
 
 ------
 
