@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
+from .forms import PostForm
 
 # Create your views here.
 
@@ -115,3 +116,23 @@ def comment_delete(request, slug, comment_id):
         messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+def create_post(request):
+    if request.user.is_superuser:
+        if request.method == 'POST':
+            form = PostForm(request.POST)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.save()
+                return redirect('home')  # Replace with the URL name for your post list view
+        else:
+            form = PostForm()
+        return render(request, 'blog/create_post.html', {'form': form})
+    else:
+        # return redirect('post_list')  # Redirect non-superusers
+        return redirect('home')  # Redirect non-superusers
+
+def posting_success(request):
+    return render(request, 'blog/posting_success.html')
