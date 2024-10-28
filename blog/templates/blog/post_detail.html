@@ -122,6 +122,24 @@
           <button class="btn btn-delete" comment_id="{{ comment.id }}">Delete</button>
           <button class="btn btn-edit" comment_id="{{ comment.id }}">Edit</button>
           {% endif %}
+
+          <!-- templates/comment_list.html -->
+          
+          {% for comment in comments %}
+          <div>
+              <p>{{ comment.content }}</p>
+              
+              {% if not comment.approved and user.is_superuser %}
+                  <form method="post" action="{% url 'approve_comment' comment.id %}">
+                      {% csrf_token %}
+                      <button type="submit" class="btn btn-primary">Approved</button>
+                  </form>
+              {% endif %}
+</div>
+{% endfor %}
+
+
+
         </div>
         <!-- Our for loop ends here -->
         {% endfor %}

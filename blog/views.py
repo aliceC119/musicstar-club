@@ -1,10 +1,11 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from .forms import CommentForm
 from .forms import PostForm
+from django.contrib.admin.views.decorators import staff_member_required
 
 # Create your views here.
 
@@ -136,3 +137,10 @@ def create_post(request):
 
 def posting_success(request):
     return render(request, 'blog/posting_success.html')
+
+@staff_member_required
+def approve_comment(request, comment_id):
+    comment = Comment.objects.get(id=comment_id)
+    comment.approved = True
+    comment.save()
+    return redirect('home')
