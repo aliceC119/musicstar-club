@@ -7,8 +7,9 @@
 <div class="container-fluid">
     
     <div class="row">
+        <h6>Core members only!</h6>
         <div class="create-post-button">
-            <h6>Core members only!</h6>
+            
         {% if user.is_authenticated %}
             <a href="{% url 'create_post' %}">Create New Post</a>
             </div>
@@ -17,6 +18,15 @@
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
+                <p>
+                 Welcome, music lovers! We are thrilled to have you explore our weekly dive 
+                 into the enchanting world of classical music. Every week, we bring you curated 
+                 insights, fascinating stories, and expert opinions, all dedicated to the beauty 
+                 and depth of classical music and its many facets.
+                Whether you're a seasoned aficionado or just beginning your journey, our blog promises to offer something special for everyone. Come along and immerse yourself in the timeless melodies, rich histories, and the remarkable individuals who have shaped this extraordinary art form.
+
+                Happy reading! 🎶
+                </p>
                 {% for post in post_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
