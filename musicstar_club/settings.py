@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'about',
     'contact',
     'django_social_share',
+    'booking',
 
 ]
 SITE_ID = 1

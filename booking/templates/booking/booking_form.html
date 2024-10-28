@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<html>
+<head>
+    <title>Booking</title>
+</head>
+<div class="row justify-content-center">
+    <div class="col-12 col-md-8 my-4">
+        <body>
+            <div class="container">
+                <h1>Book for the First Saturday!</h1>
+                <p>Welcome! We’re thrilled to connect with you. 
+                    Ready to take the next step? Book a meeting 
+                    with us and let's make great things happen together. 
+                    Click below to secure your spot, and we’ll be here, 
+                    excitedly awaiting our conversation.</p>
+
+    
+    <p>Slots available: {{ slots }}</p>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Book</button>
+    </form>
+</body>
+</html>
+{% endblock content %}
