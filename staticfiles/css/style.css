@@ -191,3 +191,22 @@ i{
 .social-share-buttons a:hover{
     background-color: #f36b1d;
 }
+
+.create-post-button{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+
+}
+.create-post-button a{
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.create-post-button a:hover{
+    background-color: #f36b1d;
+}
