@@ -1,5 +1,5 @@
 from . import views
-from django.urls import path
+from django.urls import path, include
 from .views import create_post
 
 urlpatterns = [
@@ -11,4 +11,5 @@ urlpatterns = [
     path('<slug:slug>/delete_comment/<int:comment_id>',
         views.comment_delete, name='comment_delete'),
     path('approve_comment/<int:comment_id>/', views.approve_comment, name='approve_comment'),
+    path('summernote/', include('django_summernote.urls')),
 ]
