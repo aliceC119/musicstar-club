@@ -194,8 +194,11 @@ i{
 
 .create-post-button{
     display: flex;
+    position: relative;
     
-    padding: right;
+    gap: 15px;
+
+    
     
 
 }
