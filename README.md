@@ -45,7 +45,25 @@ This blog application was developed using Django and is intended for users of th
 + `W3C Validation Service` -  to validate my HTML for potential errors.
 + `W3C CSS Validation Service` - to validate my CSS code for potential errors.
 + `Pep8` - for Python code validation and best practices formatting.
-### Features
+### Wireframes
+
+<img width="1008" alt="Screenshot 2024-10-29 at 21 22 51" src="https://github.com/user-attachments/assets/be44c26d-6d70-49e9-8080-474c0acecc19">
+
+<img width="1016" alt="Screenshot 2024-10-29 at 20 50 14" src="https://github.com/user-attachments/assets/e7aaaffb-921f-42a3-b13f-05f3e12dfc44">
+
+<img width="1009" alt="Screenshot 2024-10-29 at 21 02 03" src="https://github.com/user-attachments/assets/76fb4a26-6b28-4015-baa7-5250f2d0c880">
+
+<img width="1013" alt="Screenshot 2024-10-29 at 21 06 17" src="https://github.com/user-attachments/assets/90650a00-a49a-470c-9161-6e3746be086b">
+
+<img width="1009" alt="Screenshot 2024-10-29 at 21 15 29" src="https://github.com/user-attachments/assets/38615206-68b6-4726-95ef-72a69d3323d9">
+
+<img width="1011" alt="Screenshot 2024-10-29 at 21 11 19" src="https://github.com/user-attachments/assets/720d1727-115a-434c-8cc5-6226c6cc83a6">
+
+<img width="444" alt="Screenshot 2024-10-29 at 20 44 35" src="https://github.com/user-attachments/assets/93329b51-4fa8-493f-9f24-f1d15e7a375d">
+
+
+
+
 
 ### User Stories
 
