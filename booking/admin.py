@@ -8,4 +8,4 @@ from django_summernote.admin import SummernoteModelAdmin
 class AboutAdmin(SummernoteModelAdmin):
 
     summernote_fields = ('content',)
-    list_display = ('date', 'name', 'email',)
+    list_display = ('date', 'name', 'slots', 'email', 'created_on')

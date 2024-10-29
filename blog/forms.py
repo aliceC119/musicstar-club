@@ -9,13 +9,17 @@ from django_summernote.widgets import SummernoteWidget
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'slug', 'featured_image', 'content', 'status', 'excerpt']
+        fields = ['title', 'featured_image', 'content', 'status', 'excerpt']
         widgets = {
             'content': SummernoteWidget(), 
             
         }
+    
         
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
+
+
+        

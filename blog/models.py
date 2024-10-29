@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.template.defaultfilters import slugify 
 
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -23,8 +24,18 @@ class Post(models.Model):
     class Meta:
         ordering = ["-created_on"] 
 
+    
     def __str__(self):
         return f"The title of this post is {self.title}| written by { self.author}" 
+    
+    def save(self, *args, **kwargs):
+
+        if not self.slug:
+            
+            self.slug = slugify(self.title)
+
+        return super().save(*args, **kwargs)
+
     
 
 class Comment(models.Model):

@@ -31,7 +31,7 @@ def booking_view(request):
 def booking_success(request):
     return render(request, 'booking/booking_success.html')
 
-def book_seat(request):
-    available_seats = Booking.seats_available()
-    if available_seats <= 0:
+def book_slots(request):
+    available_slots = Booking.slots_available()
+    if available_slots <= 0:
         return render(request, 'no_seats_available.html')
