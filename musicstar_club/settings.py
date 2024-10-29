@@ -55,7 +55,6 @@ INSTALLED_APPS = [
     'about',
     'contact',
     'django_social_share',
-    'booking',
     'django_google_maps',
 
 ]
