@@ -172,9 +172,13 @@ i{
     font-size: 18px;
     
 }
-
+.social-share-buttons-container{
+    flex-wrap: wrap;
+    
+}
 .social-share-buttons{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
     gap: 15px;
