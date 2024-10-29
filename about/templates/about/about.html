@@ -19,4 +19,43 @@
         </div>
       </div>    
 </div>
+
+
+<h3>Where are we?</h3>
+<h5>Heilbronner Strasse 123,</h5>
+<h5>Germany</h5>
+
+  
+    <title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPZNmKHUrJRC-qmrj4Dobpb5yCNEthmqA&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      gmp-map {
+        height: 70%;
+        
+      }
+
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 60%;
+        width:auto;
+        margin: 10px;
+        padding: 20px;
+      }
+    </style>
+  
+  <body>
+    <gmp-map center="49.14378356933594,9.129992485046387" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="49.14378356933594,9.129992485046387" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+  </body>
+
+
+
+
+
 {% endblock content %}

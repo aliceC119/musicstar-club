@@ -7,6 +7,7 @@ from .forms import CommentForm
 from .forms import PostForm
 from django.contrib.admin.views.decorators import staff_member_required
 
+
 # Create your views here.
 
 
@@ -127,7 +128,7 @@ def create_post(request):
                 post = form.save(commit=False)
                 post.author = request.user
                 post.save()
-                return redirect('home')  # Replace with the URL name for your post list view
+                return redirect('home')  
         else:
             form = PostForm()
         return render(request, 'blog/create_post.html', {'form': form})

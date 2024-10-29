@@ -56,8 +56,12 @@ INSTALLED_APPS = [
     'contact',
     'django_social_share',
     'booking',
+    'django_google_maps',
 
 ]
+
+GOOGLE_MAPS_API_KEY = 'AIzaSyAPZNmKHUrJRC-qmrj4Dobpb5yCNEthmqA'
+
 SITE_ID = 1
 
 AUTHENTICATION_BACKENDS = (
