@@ -1,10 +1,82 @@
 ### Musicstar Blog 
+
+![screens](https://github.com/user-attachments/assets/22fa7508-0d72-4198-9080-9fc94ec28c28)
+
+### Introduction
 This blog application was developed using Django and is intended for users of the site who are interested in classical music and related topics. It also helps to gather users of the site who have similar interests in music and allows them to interact with the site owner by sending comments on the blog posts and messages to the site owner using the contact form. Musicstar will be useful to the target audience by providing up-to-date information and news in the field of classical music.
 
 
-<img width="1340" alt="home" src="https://github.com/user-attachments/assets/a0a16790-d3d6-4896-91ec-a14f9ae74af7">
+### Table of Contents
 
++ Technology Stack
++ Wireframes
++ UserStories
++ UX Goals
++ Features & site goals
++ Testing & Debugging
++ Asscessibility & Performance
+  - Lighthouse
+  - HTML Validation
+  - CSS Validation
++ Deployment
++ Credits
+
+### Technology Stack
++ Backend
+  - `Django Framework` - fullstack technolog
+  - `Python` - Used for Django manipilation & interaction.
++ Database
+  - `PostgreSQL`
+  
+
++ Frontend
+  - `HTM`L - Used for structuring and content.
+  - `CSS` - Used for adding styles to the content for legibility and aesthetic appeal.
+  - `Bootstraps5` - For styling the content for legibility and aesthetic appeal.
+  - `Javascript` - For adding basic interaactivity
+
+### Additional Technologies
++ `FontAwesome` icons - used for icons.
++ `Lighthouse` - For performance, accessibility and best practices checking.
++ `GitHub` - For code storage, version acontrol and deployment.
++ `Cloudinary` - For images storge
++ `Git` - For commiting through the terminal and pushing to GitHub for storage.
++ `Gitpod` - The IDE developed the project in.
++ `W3C Validation Service` -  to validate my HTML for potential errors.
++ `W3C CSS Validation Service` - to validate my CSS code for potential errors.
++ `Pep8` - for Python code validation and best practices formatting.
 ### Features
+
+### User Stories
+
+| Id | User Story | Implemented|
+| :---  |  :---:  |  ---: |
+| 1  | As a site user I can view a paginated list of posts so that I can select which post I want to view  | Done   |
+| 2  |As a Site User I can click on a post so that I can read the full text       | Done    |
+| 3  |As a Site User/Admin I can view comments on an individual post so that I can read the conversation       | Done    |
+| 4  |As a Site User I can register an account so that I can comment on a post    | Done    |
+| 5  |As a Site User I can leave comments on a post so that I can be involved in the conversation      | Done    |
+| 6  |As a Site User I can modify or delete my comment on a post so that I can be involved in the conversation      | Done    |
+| 7  |As a Site Admin I can create, read, update and delete posts so that I can manage my blog content      | Done    |
+| 8  |As a Site Admin I can create draft posts so that I can finish writing the content later     | Done    |
+| 9  |As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments      | Done    |
+| 10  |As a Site User I can click the About link so that I can read about the site      | Done    |
+| 11  |As a Site Admin I can create or update the About information so that the information is available to users     | Done    |
+| 12  |As a Site User I can write on the contact form so that I can send messages      | Done    |
+| 13  |As a Site Admin I can see the messages on the Admin panel so that I can read the messages      | Done    |
+| 14  |As a Site User I can click on the like button so that express my appreciation on the post      | Done    |
+| 15  |As a Site Admin I can view a column of 'Like' in the admin panel so that I know who has clicked a 'like' on which post      | Done    |
+| 16  |As a Site User I can see how many people clicked 'like' and commented on the blog post so that I would be attracted to read the post and help me to choose which post to click into    | Done    |
+| 17  |As a Site User I can click on the social share buttons so that share the post to my selected social media platform      | Done    |
+| 18  |As a Superuser I can create a post on the frontend so that creating new posts not using the admin panel      | Done    |
+| 19  |As a Site User I can click on a post so that I can read the full text       | Done    |
+| 21  |As a Superuser I can click on the approved button so that approve submitted comments      | Done    |
+| 22  |As a Site User and an unregistered User I can not see the approved button so that there is no choice for me to click on the approved button   | Done    |
+| 24  |As a Superuser I can upload an image so that featured images would be displayed in all new created posts     | Done    |
+| 25  |As a Site User I can view on the google map in the About page so that I know where the music club is      | Done    |
+| 26  |As a Superuser I can use the Richtext toolbar in the content field so that I can style the post in the create a post page      | Done    |
+
+
 
 + Navigation
   - The name of this blog app is displayed in the top left corner.
