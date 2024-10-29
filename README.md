@@ -49,7 +49,14 @@ This blog application was developed using Django and is intended for users of th
 
 <img width="1008" alt="Screenshot 2024-10-29 at 21 22 51" src="https://github.com/user-attachments/assets/be44c26d-6d70-49e9-8080-474c0acecc19">
 
-<img width="1016" alt="Screenshot 2024-10-29 at 20 50 14" src="https://github.com/user-attachments/assets/e7aaaffb-921f-42a3-b13f-05f3e12dfc44">
+<img width="1011" alt="Screenshot 2024-10-29 at 21 11 19" src="https://github.com/user-attachments/assets/28c75048-a928-4a7d-a099-c6cb64b15b4d">
+
+<img width="1009" alt="Screenshot 2024-10-29 at 22 47 32" src="https://github.com/user-attachments/assets/f541a9df-5db1-4d1b-b6f4-152e261e8558">
+
+<img width="1009" alt="Screenshot 2024-10-29 at 22 57 26" src="https://github.com/user-attachments/assets/7cbf147f-7e52-4f98-a44a-017c3671314a">
+
+<img width="1010" alt="Screenshot 2024-10-29 at 23 02 25" src="https://github.com/user-attachments/assets/08af252b-bc45-4b13-9aed-bfbb27077384">
+
 
 <img width="1009" alt="Screenshot 2024-10-29 at 21 02 03" src="https://github.com/user-attachments/assets/76fb4a26-6b28-4015-baa7-5250f2d0c880">
 
@@ -57,7 +64,7 @@ This blog application was developed using Django and is intended for users of th
 
 <img width="1009" alt="Screenshot 2024-10-29 at 21 15 29" src="https://github.com/user-attachments/assets/38615206-68b6-4726-95ef-72a69d3323d9">
 
-<img width="1011" alt="Screenshot 2024-10-29 at 21 11 19" src="https://github.com/user-attachments/assets/720d1727-115a-434c-8cc5-6226c6cc83a6">
+
 
 <img width="444" alt="Screenshot 2024-10-29 at 20 44 35" src="https://github.com/user-attachments/assets/93329b51-4fa8-493f-9f24-f1d15e7a375d">
 
