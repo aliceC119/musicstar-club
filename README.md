@@ -20,6 +20,7 @@ The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6
   - CSS Validation
 + Deployment
 + Credits
++ Acknowledgements
 
 ## Technology Stack
 + Backend
@@ -287,7 +288,48 @@ The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6
       
   <img width="650" alt="Screenshot 2024-10-30 at 20 12 21" src="https://github.com/user-attachments/assets/2531c0ae-ac84-4967-80af-53b0c0e8752b">
 
-     
+## Testing
+
+This section outlines procedures for manual testing. For automated testing, please see all files test*.py.
+
+### Manuel Testing
+
+Home Page
+
+| Feature | Expected Outcome | Testing Procedure | Result |
+| :---  |  :---:  |  ---: |  ---: |
+| Create a post link | redirect to expected loction| click on the link | works as intend |
+| Create a post form | the form appears in a new page| create a post  | works as intend |
+| Create a post  | the newly created post to be seen at the front along other blog post| create a post and publish it | works as intend |
+
+Inside the blog post
+
+| Feature | Expected Outcome | Testing Procedure | Result |
+| :---  |  :---:  |  ---: |  ---: |
+| Like button | empty heart turns to full heart| logged in as a site user and click on the heart button | works as intend |
+| Like button (Likes count)| numbers of fulled heart goes one up after clicked| click on the heart button| works as intend |
+| Comment form | a comment can be sent after click the submit buttton| logged in as a site user and write a comment then click send | works as intend |
+| Comment( awaiting to be approved message) | The message appears after a comment is sent | write a comment and click submit button | works as intend |
+| Comment (edit) | the comment can be edited after the Edit button is clicked| click the Edit button | works as intend|
+| Comment (delete) | a pop-up message appears to make sure the user want to delete the message | click the Delete button| works as intend |
+| Comment (approve) | approve a comment | logged in as a site owner, write a comment and click the Approved button | works as intend |
+| social share | share a post to a social media platform| click the social share button and share a post | works as intend |
+
+Contact form
+
+| Feature | Expected Outcome | Testing Procedure | Result |
+| :---  |  :---:  |  ---: |  ---: |
+| Message | send a message | write and send a message | works as intend |
+
+Sign Up / Log in / Log out
+
+| Feature | Expected Outcome | Testing Procedure | Result |
+| :---  |  :---:  |  ---: |  ---: |
+| Sign up | able to register| fill in username and password | works as intend |
+| log in| able to log in, a message shows successful log in| fill in a registered username and password | works as intend |
+| log out| able to log out, a message shows log out| click on log out| works as intend |
+
+
 ## Asscessibility & Performance
 
 ### Python validation
@@ -341,7 +383,7 @@ Once a new app is created, go to `Deploy` in the top toolbar, then select the Gi
 
 <img width="1213" alt="Screenshot 2024-10-30 at 20 56 36" src="https://github.com/user-attachments/assets/7b2330c1-1fb8-40f1-9f5d-2aac3662ba48">
 
-### Step 3: Deploy aour app
+### Step 3: Deploy your app
 
 Choose `main` as the branch to deploy and click on `Deploy Branch`. You can do the deploment actomatically or manuelly at this point.
 
@@ -354,7 +396,7 @@ The app can be found by clicking the 'Open App' button in the top right corner w
 
 
 ## Credits
-- The structure of this project is based on the CodeStar Bloag walkthrough project from Code Institute and I have customised it with different models and features.
+- The structure of this project is based on the CodeStar Bloag walkthrough project from Code Institute and I have customised it with more models and features.
 - The social sharing feature is referenced by the [Django Social Post integration](https://aisaastemplate.com/blog/django-social-post-integration/#mastering-django-models-for-social-media-integration)
 - The Likes feature is referenced by [Like and Dislike Button Functionality in Django](https://www.youtube.com/watch?v=ZUiTiUj-tZw&t=1212s)
 - The text and images are used by [classicfm](https://www.classicfm.com/) for educational purposes.
