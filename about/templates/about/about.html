@@ -1,9 +1,11 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% block content %}
 {% load static %}
 
+
 <!DOCTYPE html>
-<html>
+
+<head>
 
 <title>Simple Marker</title>
     <!-- The callback parameter is required, so we use console.debug as a noop -->
@@ -28,6 +30,7 @@
         </div>
       </div>    
 </div>
+</head>
 
 <div class="container">
   <h3>Where are we?</h3>
@@ -35,20 +38,13 @@
   <h5>Germany</h5>
   </div>
     
+<!--Google Maps location-->
   
-<!--Gooogle Maps location-->
-  
-  
-
     <gmp-map center="49.14382553100586,9.129981994628906" zoom="14" map-id="DEMO_MAP_ID">
       <gmp-advanced-marker position="49.14382553100586,9.129981994628906" title="My location"></gmp-advanced-marker>
     </gmp-map>
  
-    
-
-
-
      <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPZNmKHUrJRC-qmrj4Dobpb5yCNEthmqA&callback=console.debug&libraries=maps,marker&v=beta">
     </script>
-
+</html>
 {% endblock content %}

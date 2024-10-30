@@ -1,3 +1,5 @@
+""" This module contains the URL pattern for the Blog app. """
+
 from . import views
 from django.urls import path, include
 from .views import create_post

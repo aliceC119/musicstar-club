@@ -1,13 +1,25 @@
+""" This module contains the database models for the blog app. """
+
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.template.defaultfilters import slugify 
 
 # Create your models here.
+# A tuple to hold the status key for the Blog model.
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
+
+    """ 
+    The Model for the creating a post on the Blog app.
+
+    Admin or supersuers are needed to fill in all the fields listed below in 
+    order to create a post and publish it in the administration panel or
+    on the frontend.
+    """
+
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -39,6 +51,14 @@ class Post(models.Model):
     
 
 class Comment(models.Model):
+
+    """ 
+    The Model of creating comment for the posts in the Blog app.
+    Logged-in users can create comments. Admin or the superusers 
+    have a choice to choose approve or not approve the comments.
+    A date of the comment will be displayed after it is submitted.
+    """
+
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments")
     author = models.ForeignKey(
@@ -55,6 +75,13 @@ class Comment(models.Model):
     
 
 class SocialPost(models.Model):
+
+    """ 
+    The Model of creating a post when it is shared on the social media platform.
+    The fields listed below will be displayed along with the post once it is shared
+    to the social media platform.
+    """
+    
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
     image = models.ImageField(upload_to='posts/%Y/%m/%d/', blank=True, null=True)

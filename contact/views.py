@@ -1,3 +1,5 @@
+""" This module contains the views for the Contact app. """
+
 from django.shortcuts import render
 from django.contrib import messages
 from .forms import ContactForm
@@ -5,6 +7,13 @@ from .forms import ContactForm
 # Create your views here.
 
 def contact_view(request):
+
+    """ 
+    Set a logic when the Contact form is sent, a message will pop up.
+    Renders on the contact/contact.html template 
+    when user goes to the contact page.
+    """
+    
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
