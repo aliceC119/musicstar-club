@@ -74,6 +74,12 @@ This blog application was developed using Django and is intended for users of th
 
 ### User Stories
 
++ Agile Planning
+
+  Musicstar was developed using an agile methodology. The project progressed through incremental updates, focusing on delivering value at each stage.  The Kanban board for this project is available [here.](https://github.com/users/aliceC119/projects/4)
+  
+<img width="1095" alt="Screenshot 2024-10-30 at 16 31 49" src="https://github.com/user-attachments/assets/bd03e4b2-50ec-4aec-9910-fbff3138fb98">
+
 | Id | User Story | Implemented|
 | :---  |  :---:  |  ---: |
 | 1  | As a site user I can view a paginated list of posts so that I can select which post I want to view  | Done   |
@@ -101,7 +107,44 @@ This blog application was developed using Django and is intended for users of th
 | 25  |As a Site User I can view on the google map in the About page so that I know where the music club is      | Done    |
 | 26  |As a Superuser I can use the Richtext toolbar in the content field so that I can style the post in the create a post page      | Done    |
 
+### UX Goals
 
++ As a site user, I would like quick access to all pages that would enhance my browsing experience.
+  - All pages should be visible whether I am logged in or not.
+  - I should be redirected to the relevant pages without any problems.
++ As a site user, I would like all pages to have a similar manner in font family, colours, image styles, spacing, and effects.
++ As a site visitor, I would like the colours on the site to attract me to continue reading the blog posts and eventually become a regular logged in user.
++ As a site user, I would like all pages to be responsive to ensure I have a user-friendly experience every time I visit the home page.
++ As a site user, I need a message to notify me that my comment has been submitted successfully.
++ As a site user, I would like to see the time of creation of the comments so that I have an idea of how recent the are.
++ As a site user, I need to see a message that the comment was deleted after I clicked delete.
++ As a superuser, I click on the create a post link, I should be taken to a page where I can easily create a post on the site.
++ As a superuser, an approved button should be visible to me so I can easily approve a comment on a post on the site.
++ As a site user, I would like to have good accessibility and interaction when I am browsing the site so that I can have a pleasant experience with the homepage.
+
+### Site goals
++ User goals
+  - Site users can register for an account to click the Like button or comment on a post.
+  - Site users can view all the blog posts availble on the site.
+  - Logged in site users can leave a comment on posts.
+  - Logged in site users can click Like button on posts.
+  - Logged in site users can share a post by clicking the social share buttons on the posts.
+  - All users can write and send a message using the contact form.
+  - All users can view on the map to know where musicstar club is.
+  - All users can view on the about section to get to know the founders of the musicstar club.
+    
++ Site owner goals
+  - Site owners can create post directly on the site.
+  - Site owners can also leave comments or click Like button on posts.
+  - Site owners can choose the approve the submitted comments.
+  - Site owners can share a post by clicking the social share buttons on the posts.
+
++ Site admin goals
+  - Site admin can create posts
+  - Site admin can create content in the about section.
+  - Site admin can click approve or delete the submitted comments.
+  - Site admin can view the sent message from the site users.
+### Features
 
 + Navigation
   - The name of this blog app is displayed in the top left corner.
@@ -166,6 +209,7 @@ This blog application was developed using Django and is intended for users of th
 <img width="762" alt="Screenshot 2024-10-20 at 17 58 16" src="https://github.com/user-attachments/assets/dca419d1-8382-4db5-b8a5-aae8e0330f0a">
 
 + Approve a comment
+  - The Site owner can click on 'Approved' button to approve comments from other superusers.
   - The site administrator can then click on 'Approve', 'Save', or 'Delete' the comment on the admin page.
 
 <img width="1320" alt="Screenshot 2024-10-20 at 18 01 40" src="https://github.com/user-attachments/assets/4d51d322-dbdb-4a75-88f4-6d7f1a7392ba">
