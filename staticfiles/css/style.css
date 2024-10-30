@@ -216,13 +216,24 @@ i{
 
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
- gmp-map {
+gmp-map {
     flex-wrap: nowrap;
-    height: 30%;
+    height: 50%;
     width: 80%;
+    margin: 0;
     padding-left: 200px;
   }
   
-  /* Optional: Makes the sample page fill the window. */
+@media screen and (min-width: 390px) {
+
+
+    gmp-map {
+        height: 30vh;
+        margin: 25px;
+        padding: 20px;
+        
+
+    }
   
+}
  
