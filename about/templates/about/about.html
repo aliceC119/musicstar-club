@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+   
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 <div class="container mt-5">
     <div class="row">
         <div class="col-4 text-center">
@@ -21,30 +30,25 @@
 </div>
 
 <div class="container">
-<h3>Where are we?</h3>
-<h5>Heilbronner Strasse 123,</h5>
-<h5>Germany</h5>
-</div>
+  <h3>Where are we?</h3>
+  <h5>Heilbronner Strasse 123,</h5>
+  <h5>Germany</h5>
+  </div>
+    
+  
+<!--Gooogle Maps location-->
+  
   
 
-
-  
-    <title>Simple Marker</title>
-    <!-- The callback parameter is required, so we use console.debug as a noop -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPZNmKHUrJRC-qmrj4Dobpb5yCNEthmqA&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  
-  
-  <body>
     <gmp-map center="49.14382553100586,9.129981994628906" zoom="14" map-id="DEMO_MAP_ID">
       <gmp-advanced-marker position="49.14382553100586,9.129981994628906" title="My location"></gmp-advanced-marker>
     </gmp-map>
-  </body>
+ 
+    
 
 
 
-
-
+     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPZNmKHUrJRC-qmrj4Dobpb5yCNEthmqA&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
 
 {% endblock content %}
