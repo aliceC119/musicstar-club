@@ -172,14 +172,10 @@ i{
     font-size: 18px;
     
 }
-.social-share-buttons-container{
-    flex-wrap: wrap;
-    
-}
+
 .social-share-buttons{
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    flex-wrap: nowrap;
     padding: 0;
     gap: 15px;
 
@@ -202,6 +198,8 @@ i{
     
     gap: 15px;
 
+    
+    
 
 }
 .create-post-button a{
@@ -216,3 +214,18 @@ i{
     background-color: #f36b1d;
 }
 
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ gmp-map {
+    height: 50%;
+    width: 50%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+  
+  body {
+    height: 50%;
+    width: 50%;
+    margin: 0;
+    
+  }

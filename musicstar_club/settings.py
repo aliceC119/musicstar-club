@@ -59,7 +59,7 @@ INSTALLED_APPS = [
 
 ]
 
-GOOGLE_MAPS_API_KEY = 'AIzaSyAPZNmKHUrJRC-qmrj4Dobpb5yCNEthmqA'
+GOOGLE_MAPS_API_KEY = os.environ.get('GOOGLE_MAPS')
 
 SITE_ID = 1
 
