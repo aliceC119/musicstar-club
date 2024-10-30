@@ -21,7 +21,7 @@ This blog application was developed using Django and is intended for users of th
 + Deployment
 + Credits
 
-### Technology Stack
+## Technology Stack
 + Backend
   - `Django Framework` - fullstack technolog
   - `Python` - Used for Django manipilation & interaction.
@@ -30,7 +30,7 @@ This blog application was developed using Django and is intended for users of th
   
 
 + Frontend
-  - `HTM`L - Used for structuring and content.
+  - `HTML` - Used for structuring and content.
   - `CSS` - Used for adding styles to the content for legibility and aesthetic appeal.
   - `Bootstraps5` - For styling the content for legibility and aesthetic appeal.
   - `Javascript` - For adding basic interaactivity
@@ -45,7 +45,7 @@ This blog application was developed using Django and is intended for users of th
 + `W3C Validation Service` -  to validate my HTML for potential errors.
 + `W3C CSS Validation Service` - to validate my CSS code for potential errors.
 + `Pep8` - for Python code validation and best practices formatting.
-### Wireframes
+## Wireframes
 
 <img width="1008" alt="Screenshot 2024-10-29 at 21 22 51" src="https://github.com/user-attachments/assets/be44c26d-6d70-49e9-8080-474c0acecc19">
 
@@ -72,7 +72,7 @@ This blog application was developed using Django and is intended for users of th
 
 
 
-### User Stories
+## User Stories
 
 + Agile Planning
 
@@ -107,7 +107,7 @@ This blog application was developed using Django and is intended for users of th
 | 25  |As a Site User I can view on the google map in the About page so that I know where the music club is      | Done    |
 | 26  |As a Superuser I can use the Richtext toolbar in the content field so that I can style the post in the create a post page      | Done    |
 
-### UX Goals
+## UX Goals
 
 + As a site user, I would like quick access to all pages that would enhance my browsing experience.
   - All pages should be visible whether I am logged in or not.
@@ -122,7 +122,7 @@ This blog application was developed using Django and is intended for users of th
 + As a superuser, an approved button should be visible to me after I submitted a comment, so I can easily approve a comment on a post on the site.
 + As a site user, I would like to have good accessibility and interaction when I am browsing the site so that I can have a pleasant experience with the homepage.
 
-### Site goals
+## Site goals
 + User goals
   - Site users can register for an account to click the Like button or comment on a post.
   - Site users can view all the blog posts availble on the site.
@@ -144,7 +144,7 @@ This blog application was developed using Django and is intended for users of th
   - Site admin can create content in the about section.
   - Site admin can click approve or delete the submitted comments.
   - Site admin can view the sent message from the site users.
-### Features
+## Features
 
 + Navigation
   - The name of this blog app is displayed in the top left corner.
@@ -263,6 +263,9 @@ This blog application was developed using Django and is intended for users of th
   - A contact form is available on the contact page. All users can send a message to Musicstar Club by filling in their name, email address and the content of the message. A send button will appear at the bottom of the form.
   - Once a message has been sent, a pop-up box will appear informing the user that the message has been received and that a respond will be sent within 2 working days.
   - The site owner can view the messages sent from the contact form in the admin panel.
+
+  <img width="1206" alt="Screenshot 2024-10-30 at 21 07 36" src="https://github.com/user-attachments/assets/e7287347-371a-4e07-af0e-22b9102adf0b">
+
   <img width="642" alt="Screenshot 2024-10-30 at 20 06 05" src="https://github.com/user-attachments/assets/92439ba9-b136-4587-88bd-0fed16432b44">
   <img width="1093" alt="Screenshot 2024-10-30 at 20 09 42" src="https://github.com/user-attachments/assets/de01d3f1-7f94-48e4-9fb6-d358502ad028">
 
@@ -285,8 +288,69 @@ This blog application was developed using Django and is intended for users of th
   <img width="650" alt="Screenshot 2024-10-30 at 20 12 21" src="https://github.com/user-attachments/assets/2531c0ae-ac84-4967-80af-53b0c0e8752b">
 
      
+## Asscessibility & Performance
 
-    
+### Python validation
+
+- All Python files in the Musicstar Club project pass the pep8online validator test without errors.
+<img width="962" alt="Screenshot 2024-10-30 at 16 30 10" src="https://github.com/user-attachments/assets/75a3c81d-2503-4efa-b55d-d90f82f6c4db">
+
+### CSS validation
+
+- The style.css file passes the validator test without errors.
+<img width="1186" alt="Screenshot 2024-10-30 at 20 31 40" src="https://github.com/user-attachments/assets/ec388927-f920-4207-a375-e14dea6ec4f4">
+
+### HTML validation
+
+- All html files pass the validator test without erros.
+  
+<img width="1178" alt="Screenshot 2024-10-30 at 16 07 16" src="https://github.com/user-attachments/assets/81f3da68-27f7-4f22-b98e-ce15730aaf71">
+
+### Lighthouse
+
+- Lighthouse has a score of 56 in Best Practices due to the external links within the blogs. This is still within the acceptable range. The other three areas: Performance, Accessibility, and SEO are doing well.
+
+
+<img width="605" alt="Screenshot 2024-10-30 at 16 27 19" src="https://github.com/user-attachments/assets/a25e8a28-83e2-48aa-910c-36863b2a54f4">
+
+## Deployment
+
+The application is deployed on Heroku via a GitHub connection. To deploy a Heroku project, below are the steps I used.
+
+In Heroku, this is configured under Config Vars in the Settings tab.
+
+### Step 1: Create an App on Heroku
+
+Log in to your Heroku dashboard with your username and password, and confirm the access code with the two-factor verification app of your choice.
+
+Login to Heroku
+
+<img width="1197" alt="Screenshot 2024-10-30 at 20 45 41" src="https://github.com/user-attachments/assets/57d56df5-4cd1-44d1-b61c-dd75e55a97bd">
+
+Verify your identity by entering the verification code generated by an authenticator
+
+<img width="1206" alt="Screenshot 2024-10-30 at 20 47 19" src="https://github.com/user-attachments/assets/64b22dbe-5108-409f-8e10-0d46217820a7">
+
+Create a new Heroku app
+
+<img width="1206" alt="Screenshot 2024-10-30 at 20 50 25" src="https://github.com/user-attachments/assets/bc386682-1386-4642-ad00-96301334e90b">
+
+### Step 2: Connect to GitHub
+
+Once a new app is created, go to `Deploy` in the top toolbar, then select the GitHub box in the middle to connect this Heroku app to a GitHub repository.
+
+<img width="1213" alt="Screenshot 2024-10-30 at 20 56 36" src="https://github.com/user-attachments/assets/7b2330c1-1fb8-40f1-9f5d-2aac3662ba48">
+
+### Step 3: Deploy aour app
+
+Choose `main` as the branch to deploy and click on `Deploy Branch`. You can do the deploment actomatically or manuelly at this point.
+
+### Step 4: View the application
+
+The app can be found by clicking the 'Open App' button in the top right corner with the Heroku URL configuration as follows: https://*.herokuapp.com 
+
+<img width="1197" alt="Screenshot 2024-10-30 at 21 01 21" src="https://github.com/user-attachments/assets/19eb9259-8e94-4847-9586-890abf525def">
+
 ------
 
 ## Release History
