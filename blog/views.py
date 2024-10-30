@@ -1,5 +1,3 @@
-""" This module contains the views for the Blog app. """
-
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic
 from django.contrib import messages
@@ -14,11 +12,6 @@ from django.contrib.admin.views.decorators import staff_member_required
 
 
 class PostList(generic.ListView):
-
-    """
-    Display up to 6 published blog posts in every blog page.
-    """
-
     queryset = Post.objects.filter(status=1)
     template_name = "blog/index.html"
     paginate_by = 6
@@ -43,10 +36,6 @@ def post_detail(request, slug):
     comments = post.comments.all().order_by("-created_on")
     comment_count = post.comments.filter(approved=True).count()
 
-    """
-    Set the logic of likes in posts.
-    """
-
     liked = False
 
     if request.method == "POST":
@@ -58,18 +47,13 @@ def post_detail(request, slug):
 
                 if post.likes.filter(id=user.id).exists():
                     post.likes.remove(user)
-                    liked = False
-
-                else:
+                    liked=False
+                
+                else: 
                     post.likes.add(user)
-                    liked = True
+                    liked=True
 
-        """
-        A message of 'Comment submitted and awiting approval'
-        will be displayed when a user submitted a comment in a post.
 
-        Renders the page on the blog/post_detail.html template.
-        """
 
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -92,10 +76,9 @@ def post_detail(request, slug):
             "comments": comments,
             "comment_count": comment_count,
             "comment_form": comment_form,
-            "liked": liked,
+            "liked":liked,
         },
     )
-
 
 def comment_edit(request, slug, comment_id):
     """
@@ -120,7 +103,6 @@ def comment_edit(request, slug, comment_id):
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-
 def comment_delete(request, slug, comment_id):
     """
     view to delete comment
@@ -133,24 +115,12 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can \
-        only delete your own comments!')
+        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
 def create_post(request):
-
-    """
-    Set a logic to Superuser to create posts on the frontend.
-
-    Renders the page on the blog/create_post.html template when the superuser
-    goes to the link in the home page.
-
-    When the post is successfully created and published, renders the page
-    on the blog/posting_success.html template.
-    """
-
     if request.user.is_superuser:
         if request.method == 'POST':
             form = PostForm(request.POST, request.FILES)
@@ -158,7 +128,7 @@ def create_post(request):
                 post = form.save(commit=False)
                 post.author = request.user
                 post.save()
-                return redirect('home')
+                return redirect('home')  
         else:
             form = PostForm()
         return render(request, 'blog/create_post.html', {'form': form})
@@ -166,18 +136,11 @@ def create_post(request):
         # return redirect('post_list')  # Redirect non-superusers
         return redirect('home')  # Redirect non-superusers
 
-
 def posting_success(request):
     return render(request, 'blog/posting_success.html')
 
-
 @staff_member_required
 def approve_comment(request, comment_id):
-
-    """
-    Set the logic for the superusers to approve the comments on the frontend.
-    """
-
     comment = Comment.objects.get(id=comment_id)
     comment.approved = True
     comment.save()
