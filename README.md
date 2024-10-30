@@ -13,7 +13,7 @@ This blog application was developed using Django and is intended for users of th
 + UserStories
 + UX Goals
 + Features & site goals
-+ Testing & Debugging
++ Testing 
 + Asscessibility & Performance
   - Lighthouse
   - HTML Validation
@@ -119,7 +119,7 @@ This blog application was developed using Django and is intended for users of th
 + As a site user, I would like to see the time of creation of the comments so that I have an idea of how recent the are.
 + As a site user, I need to see a message that the comment was deleted after I clicked delete.
 + As a superuser, I click on the create a post link, I should be taken to a page where I can easily create a post on the site.
-+ As a superuser, an approved button should be visible to me so I can easily approve a comment on a post on the site.
++ As a superuser, an approved button should be visible to me after I submitted a comment, so I can easily approve a comment on a post on the site.
 + As a site user, I would like to have good accessibility and interaction when I am browsing the site so that I can have a pleasant experience with the homepage.
 
 ### Site goals
@@ -136,7 +136,7 @@ This blog application was developed using Django and is intended for users of th
 + Site owner goals
   - Site owners can create post directly on the site.
   - Site owners can also leave comments or click Like button on posts.
-  - Site owners can choose the approve the submitted comments.
+  - Site owners can approve the submitted comments by themselves on the site.
   - Site owners can share a post by clicking the social share buttons on the posts.
 
 + Site admin goals
@@ -209,8 +209,9 @@ This blog application was developed using Django and is intended for users of th
 <img width="762" alt="Screenshot 2024-10-20 at 17 58 16" src="https://github.com/user-attachments/assets/dca419d1-8382-4db5-b8a5-aae8e0330f0a">
 
 + Approve a comment
-  - The Site owner can click on 'Approved' button to approve comments from other superusers.
+  - The Site owner can click on 'Approved' button to approve comments for themselves.
   - The site administrator can then click on 'Approve', 'Save', or 'Delete' the comment on the admin page.
+<img width="368" alt="Screenshot 2024-10-30 at 17 37 22" src="https://github.com/user-attachments/assets/5c3e3c3b-7286-4237-9e33-1e5f765c4725">
 
 <img width="1320" alt="Screenshot 2024-10-20 at 18 01 40" src="https://github.com/user-attachments/assets/4d51d322-dbdb-4a75-88f4-6d7f1a7392ba">
 
@@ -240,7 +241,52 @@ This blog application was developed using Django and is intended for users of th
 
 <img width="755" alt="Screenshot 2024-10-20 at 18 48 55" src="https://github.com/user-attachments/assets/d9073ab6-ae71-4ae5-b0ca-a9917106c90a">
 
++ Create a Post (On the site)
+  - Site owners can create a new post with the link direct to the create a post form on the front page of the site.
+  - The Create a Post form has fields for title, image, content, status, and excerpt. An Upload button appears at the bottom of the form.
+  - A Richtext toolbar is installed in the content field, giving the site owner more freedom to style the post as they wish.
+  - The newly created post would then be placed at the front with other blog posts.
+ <img width="447" alt="Screenshot 2024-10-30 at 19 50 43" src="https://github.com/user-attachments/assets/f0926ad0-763e-4a46-b4b1-10b6dcce46ad">
+ <img width="769" alt="Screenshot 2024-10-30 at 19 46 20" src="https://github.com/user-attachments/assets/14cb2dd4-8de6-40b2-9178-a4cc3294c973">
 
+ + Create a Post (Admin panel)
+   - The site owner can also create a post in the admin panel with the following fields: title, slug, image, content, status, and excerpt. 
+ <img width="1332" alt="Screenshot 2024-10-30 at 19 59 14" src="https://github.com/user-attachments/assets/79b6c3d5-a893-4896-bcd3-37924f9baae7">
+
++ Google Maps
+
+  - A Google Map function is installed on the About page to give site users information about the location of the Musicstar club.
+  
+<img width="1204" alt="Screenshot 2024-10-30 at 19 52 47" src="https://github.com/user-attachments/assets/72bdca6f-0eff-4fbd-ba4d-275cd9566b28">
+
++ Contact form
+  - A contact form is available on the contact page. All users can send a message to Musicstar Club by filling in their name, email address and the content of the message. A send button will appear at the bottom of the form.
+  - Once a message has been sent, a pop-up box will appear informing the user that the message has been received and that a respond will be sent within 2 working days.
+  - The site owner can view the messages sent from the contact form in the admin panel.
+  <img width="642" alt="Screenshot 2024-10-30 at 20 06 05" src="https://github.com/user-attachments/assets/92439ba9-b136-4587-88bd-0fed16432b44">
+  <img width="1093" alt="Screenshot 2024-10-30 at 20 09 42" src="https://github.com/user-attachments/assets/de01d3f1-7f94-48e4-9fb6-d358502ad028">
+
+  + Sign Up
+    - Unregistered users can sign up by entering a username, email (optional), and password.
+  
+  <img width="1113" alt="Screenshot 2024-10-30 at 20 12 26" src="https://github.com/user-attachments/assets/36aed0ef-4174-433b-b0a4-09692feafdd0">
+
+  + Log in
+    - Registered user can type in username and password to log in to the site.
+    - A message would appear to inform the user that they have successfully signed in.
+  
+  <img width="634" alt="Screenshot 2024-10-30 at 20 17 51" src="https://github.com/user-attachments/assets/5ff5cb5d-1a95-46bb-a2ab-bb6ccb318c73">
+
+  <img width="1106" alt="Screenshot 2024-10-30 at 20 12 32" src="https://github.com/user-attachments/assets/6072b249-dc28-47c2-9e3f-b073d9dc18d0">
+
+  + Log out
+    - A message would appear to inform the user that they have signed out.
+      
+  <img width="650" alt="Screenshot 2024-10-30 at 20 12 21" src="https://github.com/user-attachments/assets/2531c0ae-ac84-4967-80af-53b0c0e8752b">
+
+     
+
+    
 ------
 
 ## Release History
