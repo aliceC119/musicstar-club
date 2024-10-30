@@ -5,7 +5,7 @@
 ### Introduction
 This blog application was developed using Django and is intended for users of the site who are interested in classical music and related topics. It also helps to gather users of the site who have similar interests in music and allows them to interact with the site owner by sending comments on the blog posts and messages to the site owner using the contact form. Musicstar will be useful to the target audience by providing up-to-date information and news in the field of classical music.
 
-
+The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6.herokuapp.com/)
 ### Table of Contents
 
 + Technology Stack
@@ -350,6 +350,8 @@ Choose `main` as the branch to deploy and click on `Deploy Branch`. You can do t
 The app can be found by clicking the 'Open App' button in the top right corner with the Heroku URL configuration as follows: https://*.herokuapp.com 
 
 <img width="1197" alt="Screenshot 2024-10-30 at 21 01 21" src="https://github.com/user-attachments/assets/19eb9259-8e94-4847-9586-890abf525def">
+
+
 
 ## Credits
 - The structure of this project is based on the CodeStar Bloag walkthrough project from Code Institute and I have customised it with different models and features.
