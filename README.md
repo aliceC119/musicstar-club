@@ -1,6 +1,7 @@
 ### Musicstar Blog 
 
-![screens](https://github.com/user-attachments/assets/22fa7508-0d72-4198-9080-9fc94ec28c28)
+
+<img width="966" alt="Screenshot 2024-10-31 at 09 33 46" src="https://github.com/user-attachments/assets/f960555e-b955-41f9-a3dc-d4861a2b0cd6">
 
 ### Introduction
 This blog application was developed using Django and is intended for users of the site who are interested in classical music and related topics. It also helps to gather users of the site who have similar interests in music and allows them to interact with the site owner by sending comments on the blog posts and messages to the site owner using the contact form. Musicstar will be useful to the target audience by providing up-to-date information and news in the field of classical music.
