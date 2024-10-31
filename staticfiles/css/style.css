@@ -111,6 +111,8 @@ body {
     color: lightgray;
 }
 
+/* Signup button*/
+
 .btn-signup,
 .btn-edit {
     background-color: #6b747c;
@@ -145,6 +147,8 @@ body {
     background: #E84610;
 }
 
+/* Like button*/
+
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;
@@ -168,10 +172,12 @@ body {
     background: none;
     border: none;
 }
+
 i{
-    font-size: 18px;
-    
+    font-size: 18px; 
 }
+
+/* social share button*/
 
 .social-share-buttons{
     display: flex;
@@ -191,15 +197,13 @@ i{
 .social-share-buttons a:hover{
     background-color: #f36b1d;
 }
+/* create a post button*/
 
 .create-post-button{
     display: flex;
     position: relative;
-    
+    left: 10px;
     gap: 15px;
-
-    
-    
 
 }
 .create-post-button a{
@@ -214,8 +218,8 @@ i{
     background-color: #f36b1d;
 }
 
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
+/* Google Maps*/
+
 gmp-map {
     flex-wrap: nowrap;
     height: 50%;
