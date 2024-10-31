@@ -197,6 +197,15 @@ i{
 .social-share-buttons a:hover{
     background-color: #f36b1d;
 }
+
+@media screen and (min-width: 375px){
+    .social-share-buttons{
+        display:flex;
+        flex-wrap: wrap;
+        gap:5px;
+    }
+
+}
 /* create a post button*/
 
 .create-post-button{
@@ -230,13 +239,10 @@ gmp-map {
   
 @media screen and (min-width: 390px) {
 
-
     gmp-map {
         height: 30vh;
         margin: 25px;
         padding: 20px;
-        
-
     }
   
 }
