@@ -34,7 +34,7 @@ The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6
   - `HTML` - Used for structuring and content.
   - `CSS` - Used for adding styles to the content for legibility and aesthetic appeal.
   - `Bootstraps5` - For styling the content for legibility and aesthetic appeal.
-  - `Javascript` - For adding basic interaactivity
+  - `Javascript` - For adding basic interactivity
 
 ### Additional Technologies
 + `FontAwesome` icons - used for icons.
@@ -314,6 +314,7 @@ Inside the blog post
 | Comment (delete) | a pop-up message appears to make sure the user want to delete the message | click the Delete button| works as intend |
 | Comment (approve) | approve a comment | logged in as a site owner, write a comment and click the Approved button | works as intend |
 | social share | share a post to a social media platform| click the social share button and share a post | works as intend |
+| social share (soical media platform) | a shared post can be seen on social media platform| shared a post to a social media | works as intend |
 
 Contact form
 
@@ -328,6 +329,15 @@ Sign Up / Log in / Log out
 | Sign up | able to register| fill in username and password | works as intend |
 | log in| able to log in, a message shows successful log in| fill in a registered username and password | works as intend |
 | log out| able to log out, a message shows log out| click on log out| works as intend |
+
+Admin panel
+
+| Feature | Expected Outcome | Testing Procedure | Result |
+| :---  |  :---:  |  ---: |  ---: |
+| Create a post | the form appears when click `+add` in the Post column| create a post and publish it | works as intend |
+| Create a paragraph in About | the form appears when click `+add` in the About column| create a paragraph and publish it | works as intend |
+| Comment (approve, save or delete) | comment can be approved, saved or deleted| approved, saved or deleted a comment | works as intend |
+| Message (Contact) | submitted message appears| click on the submitted message on the list display and read the message | works as intend |
 
 
 ## Asscessibility & Performance
