@@ -210,10 +210,7 @@ The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6
     
 <img width="762" alt="Screenshot 2024-10-20 at 17 58 16" src="https://github.com/user-attachments/assets/dca419d1-8382-4db5-b8a5-aae8e0330f0a">
 
-+ Approve a comment
-  - The Site owner can click on 'Approved' button to approve comments for themselves.
-  - The site administrator can then click on 'Approve', 'Save', or 'Delete' the comment on the admin page.
-<img width="368" alt="Screenshot 2024-10-30 at 17 37 22" src="https://github.com/user-attachments/assets/5c3e3c3b-7286-4237-9e33-1e5f765c4725">
+
 
 <img width="1320" alt="Screenshot 2024-10-20 at 18 01 40" src="https://github.com/user-attachments/assets/4d51d322-dbdb-4a75-88f4-6d7f1a7392ba">
 
@@ -242,6 +239,11 @@ The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6
 <img width="843" alt="Screenshot 2024-10-20 at 18 48 08" src="https://github.com/user-attachments/assets/aaa228ff-0842-4336-9348-86403b8ef6c2">
 
 <img width="755" alt="Screenshot 2024-10-20 at 18 48 55" src="https://github.com/user-attachments/assets/d9073ab6-ae71-4ae5-b0ca-a9917106c90a">
+
++ Approve a comment (Site owner)
+  - The Site owner can click on 'Approved' button to approve comments for themselves on the site.
+  
+<img width="368" alt="Screenshot 2024-10-30 at 17 37 22" src="https://github.com/user-attachments/assets/5c3e3c3b-7286-4237-9e33-1e5f765c4725">
 
 + Create a Post (On the site)
   - Site owners can create a new post with the link direct to the create a post form on the front page of the site.
