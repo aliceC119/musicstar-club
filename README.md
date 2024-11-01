@@ -48,24 +48,40 @@ The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6
 + `Pep8` - for Python code validation and best practices formatting.
 ## Wireframes
 
+It is the "landing page" of this project for all the users.
+
 <img width="1008" alt="Screenshot 2024-10-29 at 21 22 51" src="https://github.com/user-attachments/assets/be44c26d-6d70-49e9-8080-474c0acecc19">
+
+It is the landing page of this project for logged-in users.
 
 <img width="1011" alt="Screenshot 2024-10-29 at 21 11 19" src="https://github.com/user-attachments/assets/28c75048-a928-4a7d-a099-c6cb64b15b4d">
 
+This is the page within the post for superusers.
+
 <img width="1009" alt="Screenshot 2024-10-29 at 22 47 32" src="https://github.com/user-attachments/assets/f541a9df-5db1-4d1b-b6f4-152e261e8558">
+
+This is the page to create a post for the superuser.
 
 <img width="1009" alt="Screenshot 2024-10-29 at 22 57 26" src="https://github.com/user-attachments/assets/7cbf147f-7e52-4f98-a44a-017c3671314a">
 
+This is the About page.
+
 <img width="1010" alt="Screenshot 2024-10-29 at 23 02 25" src="https://github.com/user-attachments/assets/08af252b-bc45-4b13-9aed-bfbb27077384">
 
+This is the Sign Up page.
 
 <img width="1009" alt="Screenshot 2024-10-29 at 21 02 03" src="https://github.com/user-attachments/assets/76fb4a26-6b28-4015-baa7-5250f2d0c880">
 
+This is the Sign in page.
+
 <img width="1013" alt="Screenshot 2024-10-29 at 21 06 17" src="https://github.com/user-attachments/assets/90650a00-a49a-470c-9161-6e3746be086b">
+
+This is the contact page.
 
 <img width="1009" alt="Screenshot 2024-10-29 at 21 15 29" src="https://github.com/user-attachments/assets/38615206-68b6-4726-95ef-72a69d3323d9">
 
 
+This is how it looks on the phone screen.
 
 <img width="444" alt="Screenshot 2024-10-29 at 20 44 35" src="https://github.com/user-attachments/assets/93329b51-4fa8-493f-9f24-f1d15e7a375d">
 
@@ -357,7 +373,7 @@ Admin panel
 
 ### HTML validation
 
-- All html files pass the validator test without erros.
+- All html files pass the validator test without erros by providing the URL link for the check.
   
 <img width="1178" alt="Screenshot 2024-10-30 at 16 07 16" src="https://github.com/user-attachments/assets/81f3da68-27f7-4f22-b98e-ce15730aaf71">
 
@@ -410,7 +426,7 @@ The app can be found by clicking the 'Open App' button in the top right corner w
 
 ### Cloudinary
 
-The images of this application is deployed on Cloudinary. To connect with Cloudinary, below are the steps I used.
+The images of this application is deployed on Cloudinary. To connect Cloudinary to Heroku, below are the steps I used.
 
 ### Step 1: 
 
