@@ -1,7 +1,6 @@
 ### Musicstar Blog 
 
-
-<img width="966" alt="Screenshot 2024-10-31 at 09 33 46" src="https://github.com/user-attachments/assets/f960555e-b955-41f9-a3dc-d4861a2b0cd6">
+<img width="984" alt="Screenshot 2024-11-01 at 10 43 33" src="https://github.com/user-attachments/assets/a71cc215-f4e3-4487-81c3-a7a765e2a373">
 
 ### Introduction
 This blog application was developed using Django and is intended for users of the site who are interested in classical music and related topics. It also helps to gather users of the site who have similar interests in music and allows them to interact with the site owner by sending comments on the blog posts and messages to the site owner using the contact form. Musicstar will be useful to the target audience by providing up-to-date information and news in the field of classical music.
@@ -371,6 +370,8 @@ Admin panel
 
 ## Deployment
 
+### Heroku
+
 The application is deployed on Heroku via a GitHub connection. To deploy a Heroku project, below are the steps I used.
 
 In Heroku, this is configured under Config Vars in the Settings tab.
@@ -407,6 +408,57 @@ The app can be found by clicking the 'Open App' button in the top right corner w
 
 <img width="1197" alt="Screenshot 2024-10-30 at 21 01 21" src="https://github.com/user-attachments/assets/19eb9259-8e94-4847-9586-890abf525def">
 
+### Cloudinary
+
+The images of this application is deployed on Cloudinary. To connect with Cloudinary, below are the steps I used.
+
+### Step 1: 
+
+Go to [Cloudiary](https://cloudinary.com/users/register_free) and sign up to open an account
+
+<img width="639" alt="Screenshot 2024-11-01 at 10 41 26" src="https://github.com/user-attachments/assets/f9b2e2da-1a53-4c7f-ae03-9308b20d672a">
+
+### Step 2: 
+
+Go to `Getting Started` in the option column. Copy the CLOUDINARY_URL in inside`View API Keys`. 
+
+<img width="856" alt="Screenshot 2024-11-01 at 11 04 26" src="https://github.com/user-attachments/assets/5bbe3165-6039-40df-910b-2f786fa3a570">
+
+### Step 3:
+
+Connecting your project to Cloudinary by placing the CLOUDINARY_URL in the env.py file in your workspace.
+
+<img width="907" alt="Screenshot 2024-11-01 at 10 51 47" src="https://github.com/user-attachments/assets/a1161aa4-0e2b-4fb9-bd4c-a05b1b6c4bd4">
+
+### Step 4:
+
+Open the settings.py file and add the apps to `INSTALLED_APPS`.
+
+<img width="292" alt="Screenshot 2024-11-01 at 11 16 01" src="https://github.com/user-attachments/assets/ac675b11-2231-4e1c-9d22-eb5b7a1ee30f">
+
+### Step 5:
+
+Update the app to use Cloudinary, then import the CloudinaryField from the cloudinary/models.py file.
+
+<img width="399" alt="Screenshot 2024-11-01 at 11 21 08" src="https://github.com/user-attachments/assets/12cf4aa6-9aea-4706-a0f2-e1e4dbd0baca">
+
+<img width="500" alt="Screenshot 2024-11-01 at 11 22 16" src="https://github.com/user-attachments/assets/bc0f2d87-48cb-4d73-85b4-dcaae91563c0">
+
+### Step 6
+
+Run `makemigrations` and `migrate` after added a new model field.
+
+### Step 7
+
+Return to the Heroku dashboard, and click the Settings tab and the Reveal config vars button. Add a CLOUDINARY_URL key:value pair. Copy the value from the env.py file.
+
+<img width="1217" alt="Screenshot 2024-11-01 at 11 27 53" src="https://github.com/user-attachments/assets/1462b740-964a-4d9e-b559-c317b738674e">
+
+### Step 8
+
+Click on the Deploy tab, scroll down, choose the main branch and press Deploy Branch.
+
+<img width="576" alt="Screenshot 2024-11-01 at 11 28 05" src="https://github.com/user-attachments/assets/349a5139-782f-4b6b-8424-d246508ead67">
 
 
 ## Credits
