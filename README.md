@@ -271,7 +271,8 @@ The live link can be found here: [Live Site](https://musicstar-club-c284dfae9ca6
   <img width="1206" alt="Screenshot 2024-10-30 at 21 07 36" src="https://github.com/user-attachments/assets/e7287347-371a-4e07-af0e-22b9102adf0b">
 
   <img width="642" alt="Screenshot 2024-10-30 at 20 06 05" src="https://github.com/user-attachments/assets/92439ba9-b136-4587-88bd-0fed16432b44">
-  <img width="1093" alt="Screenshot 2024-10-30 at 20 09 42" src="https://github.com/user-attachments/assets/de01d3f1-7f94-48e4-9fb6-d358502ad028">
+  <img width="1214" alt="Screenshot 2024-11-01 at 09 16 13" src="https://github.com/user-attachments/assets/1239e439-92fa-4e27-a279-4dcaeb2ece83">
+
 
   + Sign Up
     - Unregistered users can sign up by entering a username, email (optional), and password.
