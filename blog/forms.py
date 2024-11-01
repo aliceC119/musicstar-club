@@ -19,7 +19,7 @@ class PostForm(forms.ModelForm):
             'content': SummernoteWidget(),
 
         }
-
+    
 
 class CommentForm(forms.ModelForm):
 
